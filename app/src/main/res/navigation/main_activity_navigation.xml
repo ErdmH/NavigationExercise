@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity_navigation"
+    app:startDestination="@id/anaEkranFragment">
+
+    <fragment
+        android:id="@+id/anaEkranFragment"
+        android:name="com.example.navigationexercise.AnaEkranFragment"
+        android:label="fragment_ana_ekran"
+        tools:layout="@layout/fragment_ana_ekran" >
+        <action
+            android:id="@+id/anaEkranToOyunEkranGecis"
+            app:destination="@id/oyunEkraniFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/oyunEkraniFragment"
+        android:name="com.example.navigationexercise.OyunEkraniFragment"
+        android:label="fragment_oyun_ekrani"
+        tools:layout="@layout/fragment_oyun_ekrani" >
+        <action
+            android:id="@+id/oyunEkrantoSonucEkranGecis"
+            app:destination="@id/sonucEkranFragment"
+            app:popUpTo="@id/anaEkranFragment"
+            app:popUpToInclusive="false" />
+        <argument
+            android:name="user"
+            app:argType="com.example.navigationexercise.nesneler.User" />
+    </fragment>
+    <fragment
+        android:id="@+id/sonucEkranFragment"
+        android:name="com.example.navigationexercise.SonucEkranFragment"
+        android:label="fragment_sonuc_ekran"
+        tools:layout="@layout/fragment_sonuc_ekran" >
+        <argument
+            android:name="tahminSayi"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="randomSayi"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="user"
+            app:argType="com.example.navigationexercise.nesneler.User" />
+        <action
+            android:id="@+id/sonucEkrantoOyunEkranGecis"
+            app:destination="@id/oyunEkraniFragment" />
+    </fragment>
+</navigation>

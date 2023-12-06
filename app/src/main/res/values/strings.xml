@@ -1,0 +1,10 @@
+<resources>
+    <string name="main_screen">Main Screen</string>
+    <string name="user_name">User Name</string>
+    <string name="button">Button</string>
+    <string name="game_screen">Game Screen</string>
+    <string name="guess_the_number">Guess The Number</string>
+    <string name="end_screen">End Screen</string>
+    <string name="random_number">Random Number = </string>
+    <string name="guessed_the_number">Random number =</string>
+</resources>

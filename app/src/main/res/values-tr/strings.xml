@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="main_screen">Ana Ekran</string>
+    <string name="user_name">Kullanıcı İsmi</string>
+    <string name="button">Buton</string>
+    <string name="game_screen">Oyun Ekranı</string>
+    <string name="guess_the_number">Sayıyı Tahmin Et</string>
+    <string name="end_screen">Sonuç Ekranı</string>
+    <string name="random_number">Random Sayı = </string>
+    <string name="guessed_the_number">Random sayı =</string>
+</resources>
